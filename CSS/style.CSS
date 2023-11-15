@@ -42,14 +42,12 @@ main{
     height: 90%;
 }
 .container1{
-background-color: green;
 display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100%;
 }
 .container2{
-background-color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -57,13 +55,49 @@ min-height: 100%;
 }
 .heading1{
     text-align: center;
+    opacity: 0; /* this makes the text invisible so that we can make it appear using transformation */
+    transform: translateX(100px);
+    transition: opacity 0.5s, transform 1.5s; /* this adds a slight transition time so that it doesnt happen instantly. */
+
 }
 .p1{
     text-align: center;
+    opacity: 0; /* this makes the text invisible so that we can make it appear using transformation */
+    transform:translateX(-100px);
+    transition: opacity 0.5s, transform 1.5s;
+}
+
+.heading1.visible, 
+.p1.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 .heading2{
     text-align: center;
+    opacity: 0; /* this makes the text invisible so that we can make it appear using transformation */
+    transform:translateY(-100px);
+    transition: opacity 0.5s, transform 1.5s;
 }
 .p2{
     text-align: center;
+      opacity: 0; /* this makes the text invisible so that we can make it appear using transformation */
+    transform:translateY(100px); /* this will be an animation on the y axis this will come up from the bottom  */
+    transition: opacity 0.5s, transform 1.5s;
+}
+.heading2.visible,
+.p2.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.footer{
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}  
+.github,
+.linkedin{
+    height: 30px;
+    width: 30px;
 }

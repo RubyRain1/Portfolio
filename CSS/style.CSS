@@ -91,6 +91,8 @@ min-height: 100%;
 }
 .footer{
     height: 5%;
+    opacity: .5;
+    background-color: #5b4965;
     display: flex;
     justify-content: center;
     align-items: center;

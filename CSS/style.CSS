@@ -53,6 +53,12 @@ justify-content: center;
 align-items: center;
 min-height: 100%;
 }
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    }
 .heading1{
     text-align: center;
     opacity: 0; /* this makes the text invisible so that we can make it appear using transformation */
